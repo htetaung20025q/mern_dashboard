@@ -11,7 +11,12 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: "*", 
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
+
 app.use(express.json());
 
 // API လမ်းကြောင်း သတ်မှတ်ခြင်း (http://localhost:5000/api/metrics ဖြင့် ခေါ်ယူနိုင်မည်)
