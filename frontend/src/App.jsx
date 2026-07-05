@@ -9,8 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   // မှတ်ချက်။ ။ "https://your-backend-app.vercel.app/api/metrics" နေရာတွင် သင်၏ Vercel Backend Link ကို ထည့်ပါ။
-  const API_URL = "https://your-backend-app.vercel.app/api/metrics"; 
-
+const API_URL = "https://mern-dashboard-nine-sable.vercel.app/api/metrics";
   const fetchMetrics = async () => {
     try {
       const response = await axios.get(API_URL);
